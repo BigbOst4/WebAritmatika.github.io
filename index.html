@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Web Apps Bangun Datar/index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- Title -->
+     <h1 class="title">Welcome to Katik</h1>
+     <p class="subtitle">
+        Hai Sobat, Selamat datang di Katik :)
+        Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+     </p>
+     <!-- Header/Navbar -->
+     <header>
+        <nav>
+            <div class="menu">
+                <a href="#triagle" class="menu-triagle">Segitiga</a>
+                <a href="#parallelogram">Jajargenjang</a>
+            </div>
+        </nav>
+     </header>
+     <!-- Main Page -->
+     <main>
+        <section id="triagle">
+            <div class="card">
+                <div>
+                    <h2>Luas Segitiga</h2>
+                </div>
+                <img src="/Web Apps Bangun Datar/assets'/Luas Segitiga.jpg">
+                <div>
+                    <h6>Rumus Luas</h6>
+                    <p>L = 1/2 x a x t </p>
+                </div>
+                <div>
+                    <p>Di mana:</p>
+                    <p>L = Luas</p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                </div>
+                <div class="form-hitung">
+                    <h1>Hitung Luas Segitiga</h1>
+                    <form onsubmit="area_triagle" action="" class="form-triagle" id="areatriagle">
+                        <input class="triagle-parallelogram" type="number" name="alas-triagle" id="alasT" required>
+                        <input class="triagle-parallelogram" type="number" name="high-triagle" id="highT" required>
+                        <span>Result: <span id="show-area-triagle"></span></span>
+                        <button class="button-triagle" type="submit" onclick="return area_triagle()">Hitung</button>
+                        <button class="clear" type="reset" onclick="resettriagle()">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="around-triagle">
+            <div class="card">
+                <div>
+                    <h2>Keliling Segitiga</h2>
+                </div>
+                <img src="/Web Apps Bangun Datar/assets'/Keliling Segitiga.jpg">
+                <div>
+                    <h6>Rumus Keliling</h6>
+                    <p>K = Sisi A + Sisi B + Sisi C </p>
+                </div>
+                <div>
+                    <p>Di mana:</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                </div>
+                <div class="form-hitung">
+                    <h1>Hitung Keliling Segitiga</h1>
+                    <form onsubmit="around_triagle" action="" class="form-around-triagle" id="aroundtriagle">
+                        <input class="triagle-parallelogram" type="number" name="sideA" id="sideA" required>
+                        <input class="triagle-parallelogram" type="number" name="sideB" id="sideB" required>
+                        <input class="triagle-parallelogram" type="number" name="sideC" id="sideC" required>
+                        <span>Result: <span id="show-around-triagle"></span></span>
+                        <button class="button-around-triagle" type="submit" onclick="return around_triagle()">Hitung</button>
+                        <button class="clear" type="reset" onclick="resetaroundtriagle()">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="parallelogram">
+            <div class="card">
+                <div>
+                    <h2>Luas Jajargenjang</h2>
+                </div>
+                <img src="/Web Apps Bangun Datar/assets'/Luas Jajargenjang.jpg">
+                <div>
+                    <h6>Rumus Luas</h6>
+                    <p>L = a x t </p>
+                </div>
+                <div>
+                    <p>Di mana:</p>
+                    <p>L = Luas</p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                </div>
+                <div class="form-hitung">
+                    <h1>Hitung Luas Jajargenjang</h1>
+                    <form onsubmit="area_parallelogram" action="" class="form-parallelogram" id="areaparallelogram">
+                        <input class="triagle-parallelogram" type="number" name="alas-parallelogram" id="alas-parallelogram" required>
+                        <input class="triagle-parallelogram" type="number" name="high-parallelogram" id="high-parallelogram" required>
+                        <span>Result: <span id="show-area-parallelogram"></span></span>
+                        <button class="button-parallelogram" type="submit" onclick="return area_parallelogram()">Hitung</button>
+                        <button class="clear" type="reset" onclick="resetparallelogram()">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="around-parallelogram">
+            <div class="card">
+                <div>
+                    <h2>Keliling Jajargenjang</h2>
+                </div>
+                <img src="/Web Apps Bangun Datar/assets'/Keliling Jajargenjang.jpg">
+                <div>
+                    <h6>Rumus Keliling</h6>
+                    <p>K = 2 x (Sisi A + Sisi B)</p>
+                </div>
+                <div>
+                    <p>Di mana:</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                </div>
+                <div class="form-hitung">
+                    <h1>Hitung Keliling Jajargenjang</h1>
+                    <form onsubmit="around_parallelogram" action="" class="form-around-parallelogram" id="aroundparallelogram">
+                        <input class="triagle-parallelogram" type="number" name="sideA" id="sideAP" required>
+                        <input class="triagle-parallelogram" type="number" name="sideB" id="sideBP" required>
+                        <span>Result: <span id="show-around-parallelogram"></span></span>
+                        <button class="button-around-parallelogram" type="submit" onclick="return around_parallelogram()">Hitung</button>
+                        <button class="clear" type="reset" onclick="resetaroundparallelogram()">reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+     </main>
+     <!-- Footer -->
+     <footer>
+        Copyright 2024 Herwan Okta Yoza
+     </footer>
+</body>
+</html>
